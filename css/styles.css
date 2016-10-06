@@ -1,0 +1,101 @@
+/* General layout components */
+
+body > header {
+	min-width: 760px;
+	height: 70px;
+}
+
+.ym-wrapper {
+	max-width: 100em;
+}
+
+.ym-wbox {
+	padding: 10px;
+}
+
+.ym-gbox {
+	padding: 0px;
+}
+#accordion {
+	
+	height: auto;
+}
+/* Concept description textbox properties*/
+#description {
+	
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+#infobox {
+	height: auto;
+	
+}
+
+.hideContent {
+    overflow-y: auto;
+    max-height: 15em;
+    padding-right: 10px;
+}
+
+.showContent {
+    height: auto;
+    padding-right: 10px;
+}
+
+
+/* CSS properties for the d3 Graph: */
+.node {
+	cursor: pointer;
+}
+
+.node:hover {
+	stroke: #000;
+	stroke-width: 1.5px;
+}
+
+.node--leaf {
+	fill: white;
+}
+
+.label {
+	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-anchor: middle;
+	text-shadow: 0 1px 0 #FF0000, 1px 0 0 #FF0000, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label, .node--root{
+	pointer-events: none;
+}
+
+/* Lines and arrows in the graph*/
+line.prerequisites{
+	stroke: #aa0000;
+    stroke-width: 2px;
+    stroke-linecap:"round";
+}
+
+marker#pre {
+    fill: #aa0000;
+    width: 2px;
+    
+}
+
+line.postrequisites{
+	stroke: #00a000;
+    stroke-width: 2px;
+    stroke-linecap:"round";
+}
+
+marker#post {
+    fill:  #00a000;
+    width: 2px;
+}
+
+
+line.similarConcepts{
+	stroke: #0000aa;
+    stroke-width: 2px;
+    stroke-linecap:"round";
+    stroke-dasharray:"20,10,5,5,5,10";
+}
